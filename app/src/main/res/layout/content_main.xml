@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main"
+        tools:context=".Activities.MainActivity">
+
+    <ImageView
+            android:id="@+id/groupFoto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/group"
+            android:scaleType="fitXY"
+    />
+    <RelativeLayout
+            android:id="@+id/courseLayout"
+            android:layout_width="210dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="250dp"
+                    android:background="#AA58B9">
+        <ImageView android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginStart="30dp"
+                   android:src="@drawable/course"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        android:text="Courses"
+        android:textColor="#fff"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="150dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/teacherLayout"
+            android:layout_width="210dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="250dp"
+                    android:background="#EB7753"
+    android:layout_toRightOf="@+id/courseLayout">
+        <ImageView android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginStart="30dp"
+                   android:src="@drawable/teacher"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Teachers"
+                  android:textColor="#fff"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="200dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/studentLayout"
+            android:layout_width="210dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="430dp"
+
+                    android:background="#4EE0D3"
+                    >
+        <ImageView android:layout_width="150dp"
+                   android:layout_height="150dp"
+
+                   android:scaleType="fitXY"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginStart="30dp"
+                   android:src="@drawable/student"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Students"
+                  android:textColor="#fff"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="180dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/activityLayout"
+            android:layout_width="210dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="500dp"
+                    android:background="#03A9F4"
+                    android:layout_toRightOf="@+id/studentLayout">
+        <ImageView android:layout_width="130dp"
+                   android:layout_height="120dp"
+                   android:scaleType="fitXY"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginStart="30dp"
+                   android:src="@drawable/event"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Activities"
+                  android:textColor="#fff"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="140dp"/>
+    </RelativeLayout>
+</RelativeLayout>
