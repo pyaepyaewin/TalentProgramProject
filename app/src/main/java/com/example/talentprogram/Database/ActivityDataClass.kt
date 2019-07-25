@@ -1,12 +1,11 @@
 package com.example.talentprogram.Database
 
-class ActivityDataClass (var text1:String,
-                         var text2:String,
-                         var text3:String,
-                         var text4:String,
-                         var text5:String,
-                         var image:Int,
-                         var imageFav:Int,
-                         var imageCmt:Int,
-                         var imageSeen:Int){
+class ActivityDataClass(
+    var chairmanName: String,
+    var text: String,
+    var backgroundImage:Int,
+    var bodyText:String
+
+
+) {
 }

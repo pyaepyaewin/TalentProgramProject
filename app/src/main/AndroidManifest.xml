@@ -9,12 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Activities.PhpCourseDetailActivity">
-        </activity>
-        <activity android:name=".Activities.StudentDetailActivity">
-        </activity>
         <activity android:name=".Activities.TeacherDetailActivity">
         </activity>
+        <activity android:name=".Activities.ActivitiesDetailActivity">
+        </activity>
+
+        <activity android:name=".Activities.StudentDetailActivity">
+        </activity>
+
         <activity android:name=".Activities.CourseDetailActivity">
         </activity>
         <activity android:name=".Activities.ActivitiesActivity">

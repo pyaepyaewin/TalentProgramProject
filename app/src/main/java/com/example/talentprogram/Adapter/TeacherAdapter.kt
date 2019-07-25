@@ -1,17 +1,11 @@
 package com.example.talentprogram.Adapter
 
 import android.content.Context
-import android.media.Image
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.talentprogram.Activities.CourseDetailActivity
-import com.example.talentprogram.Activities.TeacherActivity
-import com.example.talentprogram.Activities.TeacherDetailActivity
-import com.example.talentprogram.Database.CourseItem
 import com.example.talentprogram.Database.TeacherDataClass
-import com.example.talentprogram.ViewHolder.CourseViewHolder
+import com.example.talentprogram.Activities.TeacherDetailActivity
 import com.example.talentprogram.ViewHolder.TeacherViewHolder
 
 class TeacherAdapter(var context: Context, var layout: Int, var list: List<TeacherDataClass>, var icon:List<Int>):
@@ -31,7 +25,9 @@ class TeacherAdapter(var context: Context, var layout: Int, var list: List<Teach
             holder.major.text=list[position].major
         holder.icon.setImageResource(icon[position])
         holder.itemView.setOnClickListener{
-            context.startActivity(TeacherDetailActivity.newIntent(context))
+            context.startActivity(
+                TeacherDetailActivity.newIntent(context,list[position].name,icon[position],
+                list[position].office,list[position].work,list[position].birthday,list[position].phone,list[position].gmail))
         }
     }
 }

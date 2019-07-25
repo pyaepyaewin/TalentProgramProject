@@ -78,8 +78,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         when (item.itemId) {
             R.id.profile -> {
-                intent = Intent(this,StudentDetailActivity::class.java)
-                startActivity(intent)
+
+                startActivity(StudentDetailActivity.newIntent(this,"Pyae Pyae Win",
+                    "Android",R.drawable.ppw,"Mobile Developer","Ace Plus Solution Co.Ltd","Kamayut Township","4.4.1996","09970888966"
+                    ))
             }
             R.id.about -> {
 

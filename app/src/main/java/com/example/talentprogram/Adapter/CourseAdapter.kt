@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talentprogram.Activities.CourseDetailActivity
-import com.example.talentprogram.Activities.PhpCourseDetailActivity
 import com.example.talentprogram.Database.CourseItem
 import com.example.talentprogram.ViewHolder.CourseViewHolder
 

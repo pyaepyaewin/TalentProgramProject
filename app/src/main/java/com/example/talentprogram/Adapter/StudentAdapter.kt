@@ -30,7 +30,9 @@ class StudentAdapter(var context: Context,var layout: Int,var list:List<StudentD
         holder.studentMajor.text=list[position].major
         holder.studentIcon.setImageResource(icon[position])
         holder.itemView.setOnClickListener{
-            context.startActivity(StudentDetailActivity.newIntent(context))
+            context.startActivity(StudentDetailActivity.newIntent(context,list[position].name,list[position].major,
+                icon[position],list[position].work,list[position].office,list[position].address,
+                list[position].birthday,list[position].phone))
         }
 
     }

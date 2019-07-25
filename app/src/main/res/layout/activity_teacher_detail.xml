@@ -1,153 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Activities.TeacherDetailActivity"
-android:orientation="vertical">
-    <androidx.cardview.widget.CardView android:layout_width="match_parent"
-                                       android:layout_height="250dp">
-        <ImageView
-                android:id="@+id/back"
-                android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-        android:src="@drawable/back"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"/>
-        <ImageView android:layout_width="100dp" android:layout_height="100dp"
-        android:src="@drawable/tza"
-        android:scaleType="fitXY"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="70dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-        android:text="Ma Thaw Zin Aung"
-        android:layout_marginTop="180dp"
-        android:layout_marginStart="250dp"/>
 
-    </androidx.cardview.widget.CardView>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="10dp">
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-        android:src="@drawable/work"
-        android:scaleType="fitXY"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-        android:text="Mobile Developer"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:layout_marginTop="50dp"
-              android:layout_marginRight="30dp"
-              android:layout_marginStart="-120dp"
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Activities.TeacherDetailActivity">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                               android:layout_height="230dp"
+            >
 
-        />
+                <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
 
-    </LinearLayout>
+                        android:src="@drawable/back"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"/>
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/polygon"
+                           android:scaleType="fitEnd"
+                />
+                <androidx.cardview.widget.CardView android:layout_width="100dp"
+                                                   android:layout_height="100dp"
+                                                   android:layout_marginStart="150dp"
+                                                   android:layout_marginTop="70dp"
+                                                   app:cardCornerRadius="100dp"
 
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_marginTop="10dp">
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/office"
-                   android:scaleType="fitXY"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginStart="25dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Ace Plus Solution Co.Ltd"
-                  android:layout_marginStart="25dp"
-                  android:layout_marginTop="20dp"/>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:layout_marginTop="50dp"
-              android:layout_marginRight="30dp"
-              android:layout_marginStart="-160dp"
+                >
+                    <ImageView
+                            android:id="@+id/teacherTza"
+                            android:layout_width="100dp" android:layout_height="100dp"
+                            android:src="@drawable/tza"
+                            android:scaleType="fitXY"
 
-        />
 
-    </LinearLayout>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_marginTop="10dp">
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/birthday"
-                   android:scaleType="fitXY"
-                   android:layout_marginTop="8dp"
-                   android:layout_marginStart="25dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="1/5/1996"
-                  android:layout_marginStart="30dp"
-                  android:layout_marginTop="20dp"/>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:layout_marginTop="50dp"
-              android:layout_marginRight="30dp"
-              android:layout_marginStart="-110dp"
+                    />
+                </androidx.cardview.widget.CardView>
 
-        />
 
-    </LinearLayout>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_marginTop="10dp">
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/phone"
-                   android:scaleType="fitXY"
-                   android:layout_marginTop="8dp"
-                   android:layout_marginStart="20dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="+9453113658"
-                  android:layout_marginStart="20dp"
-                  android:layout_marginTop="20dp"/>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:layout_marginTop="50dp"
-              android:layout_marginRight="30dp"
-              android:layout_marginStart="-110dp"
+                <TextView
+                        android:id="@+id/txtTeacherName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ma Thaw Zin Aung"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginStart="250dp"/>
 
-        />
+            </androidx.cardview.widget.CardView>
 
-    </LinearLayout>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_marginTop="10dp">
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/email"
-                   android:scaleType="fitXY"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginStart="25dp"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="thawzinaung.tza@gmail.com"
-                  android:layout_marginStart="30dp"
-                  android:layout_marginTop="20dp"/>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:layout_marginTop="50dp"
-              android:layout_marginRight="30dp"
-              android:layout_marginStart="-190dp"
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="8dp"
+                       >
 
-        />
 
-    </LinearLayout>
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/work"
+                           android:scaleType="fitXY"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginStart="10dp"/>
+                <TextView
+                        android:id="@+id/txtWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Developer"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginStart="-120dp"
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+                />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/office"
+                           android:scaleType="fitXY"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginStart="25dp"/>
+                <TextView
+                        android:id="@+id/txtOffice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ace Plus Solution Co.Ltd"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginStart="-160dp"
+
+                />
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/birthday"
+                           android:scaleType="fitXY"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginStart="25dp"/>
+                <TextView
+                        android:id="@+id/txtBirthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/5/1996"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginStart="-110dp"
+
+                />
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/phone"
+                           android:scaleType="fitXY"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginStart="20dp"/>
+                <TextView
+                        android:id="@+id/txtPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+9453113658"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginStart="-110dp"
+
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp"
+                         >
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/email"
+                           android:scaleType="fitXY"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginStart="25dp"/>
+                <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="thawzinaung.tza@gmail.com"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginStart="-190dp"
+
+                />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</ScrollView>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentBottom="true"/>
+        <RelativeLayout
+                android:layout_marginBottom="16dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/messengerround1"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+            <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/messengerround">
+                <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/messages"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+

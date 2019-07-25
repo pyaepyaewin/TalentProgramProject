@@ -1,5 +1,6 @@
 package com.example.talentprogram.Activities
 
+import android.bluetooth.BluetoothClass
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -22,10 +23,14 @@ class TeacherActivity : AppCompatActivity() {
             R.drawable.msp
 
         )
-        var teacher1 = TeacherDataClass("Ma Thaw Zin Aung","Android",imageIcon[0])
-        var teacher2 = TeacherDataClass("Phone Lin Aung","Android",imageIcon[1])
-        var teacher3 = TeacherDataClass("Kyaw Kyaw Khaing","Android",imageIcon[2])
-        var teacher4 = TeacherDataClass("Myo Set Paing","Android",imageIcon[3])
+        var teacher1 = TeacherDataClass("Ma Thaw Zin Aung","Android",imageIcon[0],"Mobile Developer",
+            "Ace Plus Solution Co.Ltd","1.1.1996","09453113658","thawzinaung.tza@gmail.com")
+        var teacher2 = TeacherDataClass("Phone Lin Aung","Android",imageIcon[1],
+            "Mobile Developer","ACE",
+            "2.1.1996","123434","phonelinaung@gmail.com")
+        var teacher3 = TeacherDataClass("Kyaw Kyaw Khaing","Android",imageIcon[2],"Mobile Developer","Ace Plus Solution Co.Ltd","1.1.1996","099123456","kyawkyawkhaing@gmail.com")
+        var teacher4 = TeacherDataClass("Myo Set Paing","Android",imageIcon[3],"Mobile Developer","Ace Plus Solution Co.Ltd",
+            "2.1.1996","09951104661","myosetpaing@gmail.com")
         var teacherArray = mutableListOf<TeacherDataClass>(teacher1,teacher2,teacher3,teacher4)
 
         var adapter = TeacherAdapter(this, R.layout.teacher, teacherArray, imageIcon)

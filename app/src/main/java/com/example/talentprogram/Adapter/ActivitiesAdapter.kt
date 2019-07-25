@@ -7,10 +7,11 @@ import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talentprogram.Activities.ActivitiesActivity
+import com.example.talentprogram.Activities.ActivitiesDetailActivity
 import com.example.talentprogram.Database.ActivityDataClass
 import com.example.talentprogram.ViewHolder.ActivitiesViewHolder
 
-class ActivitiesAdapter (var context: Context, var layout:Int, var list: List<ActivityDataClass>, var icon:List<Int>):
+class ActivitiesAdapter (var context: Context, var layout:Int, var list: List<ActivityDataClass>):
 RecyclerView.Adapter<ActivitiesViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActivitiesViewHolder {
        var inflater=LayoutInflater.from(context)
@@ -23,15 +24,13 @@ RecyclerView.Adapter<ActivitiesViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ActivitiesViewHolder, position: Int) {
-        holder.text1.text = list[position].text1
-        holder.text2.text = list[position].text2
-        holder.text3.text = list[position].text3
-        holder.text4.text = list[position].text4
-        holder.text5.text = list[position].text5
-        holder.image.setImageResource(icon[position])
+       holder.name.text=list[position].chairmanName
+        holder.text.text=list[position].text
+        holder.image.setImageResource(list[position].backgroundImage)
 
         holder.itemView.setOnClickListener {
-            context.startActivity(ActivitiesActivity.newIntent(context))
+            context.startActivity(ActivitiesDetailActivity.newIntent(context,list[position].chairmanName,
+                list[position].backgroundImage,list[position].bodyText))
         }
     }
 }

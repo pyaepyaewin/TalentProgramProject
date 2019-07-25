@@ -35,10 +35,10 @@
 
     <com.google.android.material.card.MaterialCardView
             android:layout_width="300dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="37dp"
-            android:layout_marginTop="50dp"
-            app:cardCornerRadius="10dp">
+        android:layout_height="250dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="10dp">
         <LinearLayout android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:orientation="horizontal">
@@ -89,7 +89,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="20sp"/>
 
-        <com.google.android.material.button.MaterialButton
+        <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:layout_marginTop="50dp"
                 android:text="Login"
                 android:textSize="20sp"
-                android:background="@drawable/shape"
+               android:background="@drawable/shape"
         />
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
