@@ -19,21 +19,23 @@
                   android:orientation="vertical"
                   android:layout_marginStart="10dp"
                   android:layout_marginTop="140dp"
-    android:background="#7F60B6">
+    android:background="#0C2848">
         <TextView
                 android:id="@+id/txtStudent1"
                 android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
         android:text="Mg Mg"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorText"/>
         <TextView
                 android:id="@+id/txtStudent2"
                 android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
         android:text="Android"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorText"/>
 
 </LinearLayout>
 </RelativeLayout>

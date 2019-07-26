@@ -12,12 +12,13 @@
            android:layout_height="200dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
-
+        
+android:layout_marginRight="10dp"
 android:src="@drawable/ic_launcher_foreground"/>
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#5789B1"
+    android:background=" #0C2848"
     android:layout_alignBottom="@id/imageTeacher"
     android:layout_marginStart="10dp">
         <TextView
@@ -26,14 +27,16 @@ android:src="@drawable/ic_launcher_foreground"/>
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Thaw Zin Aung"/>
+                android:text="Thaw Zin Aung"
+        android:textColor="@color/colorText"/>
         <TextView
                 android:id="@+id/txtView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Android"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"/>
+                android:layout_marginStart="10dp"
+        android:textColor="@color/colorText"/>
     </LinearLayout>
 
 </RelativeLayout>

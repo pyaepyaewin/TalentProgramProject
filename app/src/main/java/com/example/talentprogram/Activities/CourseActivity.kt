@@ -9,12 +9,21 @@ import com.example.talentprogram.Adapter.CourseAdapter
 import com.example.talentprogram.Database.CourseItem
 import com.example.talentprogram.R
 import kotlinx.android.synthetic.main.activity_course.*
+import kotlinx.android.synthetic.main.app_bar_main.*
 
 class CourseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course)
+        var actionBar=supportActionBar
+        actionBar?.setDisplayShowTitleEnabled(true)
+        actionBar?.setHomeButtonEnabled(true)
+        actionBar?.title = "Course"
+        setSupportActionBar(courseToolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
         var course_1 = CourseItem("Android Development")
         var course_2 = CourseItem("PHP Development")
         var course_3 = CourseItem("Java Development")
@@ -32,6 +41,11 @@ class CourseActivity : AppCompatActivity() {
         rcCourse.layoutManager = LinearLayoutManager(this)
         rcCourse.adapter = adapter
     }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     companion object
     {
         fun newIntent(context: Context): Intent

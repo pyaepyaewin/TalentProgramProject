@@ -14,6 +14,8 @@ class CourseDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_detail)
+        setSupportActionBar(courseDetailToolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         var androidCourseDetailList = mutableListOf<String>(
             "1.Version Control And Git",
             "2.Kotlin Programming",
@@ -42,7 +44,10 @@ class CourseDetailActivity : AppCompatActivity() {
 //        rvCourseDetail.adapter=designAdapter
 //        rvCourseDetail.adapter=basicAdapter
     }
-
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
     companion object {
 
         fun newIntent(context: Context): Intent {

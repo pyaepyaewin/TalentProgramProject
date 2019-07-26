@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.talentprogram.Adapter.TeacherAdapter
 import com.example.talentprogram.Database.TeacherDataClass
@@ -16,6 +17,9 @@ class TeacherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher)
+        teacherToolBar.setTitle("Teacher")
+        setSupportActionBar(teacherToolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         var imageIcon= mutableListOf<Int>(
             R.drawable.tza,
             R.drawable.pla,
@@ -36,6 +40,15 @@ class TeacherActivity : AppCompatActivity() {
         var adapter = TeacherAdapter(this, R.layout.teacher, teacherArray, imageIcon)
        rvTeacher.layoutManager = GridLayoutManager(this,2)
         rvTeacher.adapter = adapter
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.filter,menu)
+        return true
     }
     companion object
     {

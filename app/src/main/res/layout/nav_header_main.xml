@@ -11,7 +11,8 @@
         android:paddingTop="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:orientation="vertical"
-        android:gravity="bottom">
+        android:gravity="bottom"
+android:backgroundTint="#9B5059">
 
     <ImageView
             android:layout_width="100dp"
@@ -19,7 +20,9 @@
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             app:srcCompat="@drawable/profileview"
             android:contentDescription="@string/nav_header_desc"
-            android:id="@+id/imageView"/>
+            android:id="@+id/imageView"
+            android:tint="@color/colorText"
+    />
 
     <TextView
             android:layout_width="match_parent"
@@ -27,20 +30,29 @@
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:layout_marginTop="10dp"
             android:text="Mg Myo Set Paing"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textSize="20sp"
+            android:lineHeight="23dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="@color/colorText"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mobility"
             android:id="@+id/textView1"
-    android:layout_marginTop="10dp"/>
+            android:lineHeight="23dp"
+            android:textSize="20sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/colorText"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Batch 1"/>
+            android:lineHeight="23dp"
+            android:textSize="20sp"
+            android:text="Batch 1"
+    android:textColor="@color/colorText"/>
 
 
 

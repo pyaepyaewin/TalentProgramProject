@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.talentprogram.Adapter.ActivitiesAdapter
 import com.example.talentprogram.Database.ActivityDataClass
@@ -11,12 +12,17 @@ import com.example.talentprogram.Database.TeacherDataClass
 import com.example.talentprogram.R
 import kotlinx.android.synthetic.main.activity_activities.*
 import kotlinx.android.synthetic.main.activity_activities_detail.*
+import java.util.zip.Inflater
 
 class ActivitiesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_activities)
+        backBtn.setOnClickListener {
+            onBackPressed()
+            true
+        }
 
         var activity1 = ActivityDataClass("Sayar U Thein Oo",
             "Don't waint for opportunity,Create it",R.drawable.chairman,
@@ -36,6 +42,8 @@ var arrayActivity= mutableListOf<ActivityDataClass>(activity1,activity2,activity
         rvActivities.layoutManager=LinearLayoutManager(this)
         rvActivities.adapter=adapter
     }
+
+
     companion object{
         fun newIntent(context: Context):Intent{
             val intent= Intent(context,MainActivity::class.java)

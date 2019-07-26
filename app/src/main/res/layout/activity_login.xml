@@ -11,34 +11,44 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".Activities.LoginActivity"
         android:orientation="vertical"
-        android:background="#E91E63">
+        android:background="@color/colorBackground">
     <TextView
             android:id="@+id/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:textSize="40sp"
+            android:textSize="36sp"
             android:textStyle="bold"
-            android:textColor="#fff"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
+            android:textColor="@color/colorText"
+            android:fontFamily="American Typewriter"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="70dp"
+            android:lineHeight="42dp"
+
+            android:layout_marginTop="50dp"/>
     <TextView
             android:id="@+id/txtTalentProgram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Talent Program"
-            android:textSize="30sp"
+            android:textSize="24sp"
+            android:lineHeight="28dp"
+            android:layout_marginRight="23dp"
+            android:fontFamily="American Typewriter"
             android:textStyle="bold"
-            android:textColor="#fff"
+            android:textColor="@color/colorText"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"/>
 
     <com.google.android.material.card.MaterialCardView
             android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="10dp">
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorText"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            app:cardCornerRadius="10dp">
         <LinearLayout android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:orientation="horizontal">
@@ -79,25 +89,34 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="100dp"
+            android:orientation="horizontal">
         <TextView
                 android:id="@+id/txtForget"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forget Password?"
                 android:layout_marginTop="50dp"
-                android:layout_marginStart="10dp"
-                android:textSize="20sp"/>
+                android:layout_marginStart="6.39dp"
+                android:layout_marginRight="47.78dp"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"/>
 
         <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginRight="12dp"
                 android:layout_marginTop="50dp"
                 android:text="Login"
                 android:textSize="20sp"
-               android:background="@drawable/shape"
+                android:background="#fff"
+                android:fontFamily="American Typewriter"
+
         />
+
     </LinearLayout>
+
+
 </androidx.appcompat.widget.LinearLayoutCompat>

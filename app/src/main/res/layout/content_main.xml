@@ -16,18 +16,18 @@
             android:layout_height="250dp"
             android:src="@drawable/group"
             android:scaleType="fitXY"
-    />
+            android:layout_marginTop="0dp" android:layout_alignParentTop="true"/>
     <RelativeLayout
             android:id="@+id/courseLayout"
             android:layout_width="210dp"
                     android:layout_height="180dp"
                     android:layout_marginTop="250dp"
-                    android:background="#AA58B9">
+                    android:background="#E91E63">
         <ImageView android:layout_width="150dp"
                    android:layout_height="150dp"
                    android:scaleType="fitXY"
                    android:layout_marginTop="8dp"
-                   android:layout_marginStart="30dp"
+                   android:layout_marginStart="20dp"
                    android:src="@drawable/course"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_width="210dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="250dp"
-                    android:background="#EB7753"
+                    android:background="#A26D3D"
     android:layout_toRightOf="@+id/courseLayout">
         <ImageView android:layout_width="150dp"
                    android:layout_height="150dp"
@@ -62,7 +62,7 @@
                     android:layout_height="250dp"
                     android:layout_marginTop="430dp"
 
-                    android:background="#4EE0D3"
+                    android:background="#00BCD4"
                     >
         <ImageView android:layout_width="150dp"
                    android:layout_height="150dp"
@@ -83,7 +83,7 @@
             android:layout_width="210dp"
                     android:layout_height="180dp"
                     android:layout_marginTop="500dp"
-                    android:background="#03A9F4"
+                    android:background="#2674CF"
                     android:layout_toRightOf="@+id/studentLayout">
         <ImageView android:layout_width="130dp"
                    android:layout_height="120dp"
